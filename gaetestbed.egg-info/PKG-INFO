@@ -1,0 +1,52 @@
+Metadata-Version: 1.0
+Name: gaetestbed
+Version: 0.12dev-r33
+Summary: GAE Testbed is a set of test cases to simplify testing on AppEngine
+Home-page: http://gae-testbed.googlecode.com/
+Author: JJ Geewax
+Author-email: jj@geewax.org
+License: GPL v2
+Description: This library provides a set of base test cases that can be mixed into your existing test cases.
+        
+        They provide additional features to sandbox each test (by clearing the DataStore, Memcache, etc)
+        and also add in additional `assert` style statements.
+        
+        MailTestCase example::
+        
+        import unittest
+        from gaetestbed import MailTestCase
+        
+        class MyTestCase(unittest.TestCase, MailTestCase):
+        def test_email_sent(self):
+        send_email_to('test@example.org') # Some method that sends e-mail...
+        self.assertEmailSent(to='test@example.org')
+        self.assertEqual(len(self.get_sent_messages()), 1)
+        
+        MemcacheTestCase example::
+        
+        import unittest
+        from gaetestbed import MemcacheTestCase
+        
+        class MyTestCase(unittest.TestCase, MemcacheTestCase):
+        def test_memcache_gets_hit(self):
+        self.assertMemcacheItems(0)
+        self.assertMemcacheHits(0)
+        
+        add_to_memcache('something', 'something') # Add something to memcache somehow...
+        self.assertMemcacheItems(1)
+        self.assertMemcacheHits(0)
+        
+        get_page('/page_that_hits_memcache/')
+        self.assertMemcacheItems(1)
+        self.assertMemcacheHits(1)
+        
+Keywords: test testing app-engine google-app-engine gae unittest
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Testing
