@@ -3,7 +3,10 @@
 The full documentation for this project is located at http://gaetestbed.geewax.org/index.html
 
 ## Introduction
-Writing tests for !AppEngine applications seems more difficult to me than it should be. This project is a set of base test cases to make it simple to test the more complicated pieces of !AppEngine's framework (such as sending E-mail messages, the datastore, Memcache, etc).
+Writing tests for AppEngine applications seems more difficult to me than it
+should be. This project is a set of base test cases to make it simple to test
+the more complicated pieces of !AppEngine's framework (such as sending E-mail
+messages, the datastore, Memcache, etc).
 
 ### How to get it...
 
@@ -18,7 +21,7 @@ Writing tests for !AppEngine applications seems more difficult to me than it sho
 Here are a few examples of how GAETestbed makes testing the complicated parts of !AppEngine really simple.
 
 ### Testing that E-mail was Sent
-(as seen on [http://stackoverflow.com/questions/427400/unit-testing-and-mocking-email-sender-in-python-with-google-appengine/1411769#1411769 StackOverflow])
+as seen on [StackOverflow](http://stackoverflow.com/questions/427400/unit-testing-and-mocking-email-sender-in-python-with-google-appengine/1411769#1411769)
 
 
     import unittest
