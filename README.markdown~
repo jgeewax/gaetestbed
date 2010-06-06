@@ -2,12 +2,13 @@ h1. API Documentation
 
 The full documentation for this project is located at http://gaetestbed.geewax.org/index.html
 
-h1. Introduction
+= Introduction = 
 Writing tests for !AppEngine applications seems more difficult to me than it should be. This project is a set of base test cases to make it simple to test the more complicated pieces of !AppEngine's framework (such as sending E-mail messages, the datastore, Memcache, etc).
 
-h2. How to get it...
-
-  $ sudo easy_install gaetestbed
+== How to get it... ==
+{{{
+$ sudo easy_install gaetestbed
+}}}
 
 == How to run it... ==
 {{{
