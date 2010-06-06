@@ -1,6 +1,6 @@
 # GAE Testbed
 
-The full documentation for this project is located at http://gaetestbed.geewax.org/index.html
+The full documentation for this project is located [http://gaetestbed.geewax.org/index.html](http://gaetestbed.geewax.org/index.html)
 
 ## Introduction
 Writing tests for AppEngine applications seems more difficult to me than it
@@ -216,8 +216,11 @@ Additionally, to run the functional (web) tests, you'll need to grab
     $ sudo easy_install webtest
 
 ## Benefits
- * Each test is sandboxed so that you can assume all of the services are empty when you start your test. This way, there's no need to worry about cleaning up data between tests.
- * Helper assert methods that simplify testing such as `assertMailSent()` or `assertMemcacheHits()`
+ * Each test is sandboxed so that you can assume all of the services are empty
+   when you start your test. This way, there's no need to worry about cleaning
+   up data between tests.
+ * Helper assert methods that simplify testing such as `assertMailSent()` or
+   `assertMemcacheHits()`
 
 ## Feedback, etc
  * If you find a bug with the testbed, open a ticket [here](http://github.com/jgeewax/gaetestbed/issues).
