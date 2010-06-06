@@ -220,8 +220,10 @@ Additionally, to run the functional (web) tests, you'll need to grab
  * Helper assert methods that simplify testing such as `assertMailSent()` or `assertMemcacheHits()`
 
 ## Feedback, etc
- * If you find a bug with the testbed, open a ticket [here](http://code.google.com/p/gae-testbed/issues/list). All tickets are really appreciated.
- * If there's already a ticket that you'd like to see done faster, star the ticket and it will get more attention. Patches are always appreciated too :)
+ * If you find a bug with the testbed, open a ticket [here](http://github.com/jgeewax/gaetestbed/issues).
+   All tickets are really appreciated.
+ * If there's already a ticket that you'd like to see done faster, star the ticket
+   and it will get more attention. Patches are always appreciated too :)
 
 ## Thanks
  * Thanks for Jason Pellerin and Kumar McMillan for their work on Nose and NoseGAE.
