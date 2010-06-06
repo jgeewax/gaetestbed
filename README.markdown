@@ -1,23 +1,23 @@
-# API Documentation
+# GAE Testbed
 
 The full documentation for this project is located at http://gaetestbed.geewax.org/index.html
 
-# Introduction
+## Introduction
 Writing tests for !AppEngine applications seems more difficult to me than it should be. This project is a set of base test cases to make it simple to test the more complicated pieces of !AppEngine's framework (such as sending E-mail messages, the datastore, Memcache, etc).
 
-## How to get it...
+### How to get it...
 
     $ sudo easy_install gaetestbed
 
-## How to run it...
+### How to run it...
 
     $ nosetests --with-gae
 
-# Test Showcase
+## Test Showcase
 
 Here are a few examples of how GAETestbed makes testing the complicated parts of !AppEngine really simple.
 
-## Testing that E-mail was Sent
+### Testing that E-mail was Sent
 (as seen on [http://stackoverflow.com/questions/427400/unit-testing-and-mocking-email-sender-in-python-with-google-appengine/1411769#1411769 StackOverflow])
 
 
@@ -30,7 +30,7 @@ Here are a few examples of how GAETestbed makes testing the complicated parts of
             self.assertEmailSent(to='test@example.org')
             self.assertEqual(len(self.get_sent_messages()), 1)
 
-## Testing that Memcache was Hit
+### Testing that Memcache was Hit
 
     import unittest
     from gaetestbed import MemcacheTestCase

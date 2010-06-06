@@ -48,7 +48,6 @@ Here are a few examples of how GAETestbed makes testing the complicated parts of
         self.assertMemcacheItems(1)
         self.assertMemcacheHits(1)
 
-
 == Testing that Tasks were added to the Task Queue==
 {{{
 import unittest
