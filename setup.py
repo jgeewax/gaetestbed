@@ -63,7 +63,7 @@ setup(
     keywords='test testing app-engine google-app-engine gae unittest',
     author='JJ Geewax',
     author_email='jj@geewax.org',
-    url='http://gae-testbed.googlecode.com/',
+    url='http://github.com/jgeewax/gaetestbed/',
     license='GPL v2',
     packages=find_packages(exclude=['ez_setup', 'examples', 'tests']),
     include_package_data=True,
