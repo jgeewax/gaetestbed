@@ -1,3 +1,5 @@
 *.py[oc]
 *~
 .coverage
+dist/
+*.egg-info/
