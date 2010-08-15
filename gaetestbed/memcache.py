@@ -1,4 +1,4 @@
-# This file is part of GAE Testbed (http://gae-testbed.googlecode.com).
+# This file is part of GAE Testbed (http://github.com/jgeewax/gaetestbed).
 # 
 # Copyright (C) 2009 JJ Geewax http://geewax.org/
 # All rights reserved.
