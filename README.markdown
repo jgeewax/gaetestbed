@@ -2,6 +2,10 @@
 
 The full documentation for this project is located [http://gaetestbed.geewax.org/index.html](http://gaetestbed.geewax.org/index.html)
 
+## Special note
+
+Now that I work for Google, 20% of my time is spent porting GAE Testbed to be part of the Python SDK. As a result, don't expect many new features on this project...
+
 ## Introduction
 Writing tests for AppEngine applications seems more difficult to me than it
 should be. This project is a set of base test cases to make it simple to test
